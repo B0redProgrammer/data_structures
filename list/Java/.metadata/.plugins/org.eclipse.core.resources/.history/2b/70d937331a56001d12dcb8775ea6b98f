@@ -1,0 +1,9 @@
+
+abstract class LISTELEMENTS {
+	
+	LISTELEMENTS() {	}
+	
+	abstract LISTELEMENTS AddEnd(INTERFACE val);
+	abstract void printInfos();
+	abstract int getLength();
+}

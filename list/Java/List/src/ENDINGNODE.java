@@ -1,0 +1,34 @@
+
+public class ENDINGNODE extends LISTELEMENTS {
+	
+	public ENDINGNODE() {
+		super();
+	}
+
+	public LISTELEMENTS AddEnd(INTERFACE val) {
+		return new NODE(this, val);
+	}
+	
+	public int getLength() {
+		return 0;
+	}
+	
+	public INTERFACE RetVal() {
+		return null;
+	}
+	
+	public LISTELEMENTS DelFirst() {
+		return this;
+	}
+	
+	public INTERFACE GetLast(INTERFACE I) {
+		return I;
+	}
+	
+	public LISTELEMENTS DelLast() {
+		return null;
+	}
+	
+	public void printInfos() {	}
+	
+}

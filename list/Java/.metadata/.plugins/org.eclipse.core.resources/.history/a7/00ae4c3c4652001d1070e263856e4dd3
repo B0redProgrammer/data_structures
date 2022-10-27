@@ -1,0 +1,11 @@
+
+public class Main {
+	
+	static Tests t = new Tests();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		t.Test1();
+	}
+
+}

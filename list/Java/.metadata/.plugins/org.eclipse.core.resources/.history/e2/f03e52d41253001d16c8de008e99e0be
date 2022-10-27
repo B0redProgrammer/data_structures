@@ -1,0 +1,9 @@
+
+abstract class ListElements {
+	
+	ListElements() {	}
+	
+	abstract ListElements AddEnd(Interface val);
+	abstract void printInfos();
+	abstract int getLength();
+}

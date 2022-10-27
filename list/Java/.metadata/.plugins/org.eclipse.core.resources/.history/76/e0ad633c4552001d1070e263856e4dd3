@@ -1,0 +1,16 @@
+
+public class list {
+	ListElements first;
+
+	public list() {
+		first = new EndingNode();
+	}
+	
+	public void AddEnd(Interface val) {
+		first = first.AddEnd(val);
+	}
+	
+	public void printInfos() {
+		
+	}
+}

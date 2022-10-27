@@ -1,0 +1,12 @@
+
+public class Tests {
+	
+	list l = new list();
+	
+	Person p1 = new Person("Ignacio");
+	Person p2 = new Person("Maverick");
+	Person p3 = new Person("Peter");
+	Person p4 = new Person("Michael");
+	Person p5 = new Person("Kevin");
+
+}

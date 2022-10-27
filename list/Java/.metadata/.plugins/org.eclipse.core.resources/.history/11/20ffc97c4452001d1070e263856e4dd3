@@ -1,0 +1,8 @@
+
+public class EndingNode extends ListElements {
+
+	public ListElements AddEnd(Interface val) {
+		return new Node(this, val);
+	}
+	
+}

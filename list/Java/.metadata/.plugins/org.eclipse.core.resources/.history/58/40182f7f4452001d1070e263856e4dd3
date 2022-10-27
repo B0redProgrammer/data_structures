@@ -1,0 +1,5 @@
+
+abstract class ListElements {
+	ListElements() {	}
+	abstract ListElements AddEnd(Interface val);
+}

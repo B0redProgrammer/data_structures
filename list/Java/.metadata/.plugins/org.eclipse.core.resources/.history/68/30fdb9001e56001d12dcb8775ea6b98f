@@ -1,0 +1,34 @@
+
+public class NODE extends LISTELEMENTS {
+	LISTELEMENTS next;
+	INTERFACE val;
+	
+	public NODE(LISTELEMENTS next, INTERFACE val) {
+		super();
+		this.next = next;
+		this.val = val;
+	}
+	
+	public LISTELEMENTS AddEnd(INTERFACE val) {
+		this.next = this.next.AddEnd(val);
+		return this;
+	}
+	
+	public int getLength() {
+		return next.getLength() + 1;
+	}
+	
+	public INTERFACE RetVal() {
+		return val;
+	}
+	
+	public LISTELEMENTS DelFirst() {
+		return next;
+	}
+	
+	public void printInfos() {
+		val.printInfo();
+		next.printInfos();
+	}
+	
+}

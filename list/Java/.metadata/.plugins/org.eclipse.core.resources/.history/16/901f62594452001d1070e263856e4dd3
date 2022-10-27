@@ -1,0 +1,16 @@
+
+public class Node extends ListElements {
+	ListElements next;
+	Interface val;
+	
+	public Node(ListElements next, Interface val) {
+		super();
+		this.next = next;
+		this.val = val;
+	}
+	
+	public ListElements AddEnd(Interface val) {
+		this.next = this.next.AddEnd(val);
+	}
+	
+}

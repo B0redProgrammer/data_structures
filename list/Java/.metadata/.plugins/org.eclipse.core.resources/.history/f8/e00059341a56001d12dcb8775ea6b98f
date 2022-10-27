@@ -1,0 +1,24 @@
+
+public class LIST {
+	LISTELEMENTS first;
+
+	public LIST() {
+		first = new ENDINGNODE();
+	}
+	
+	public void AddEnd(INTERFACE val) {
+		first = first.AddEnd(val);
+	}
+	
+	public void AddFirst(INTERFACE val) {
+		first = new NODE(first, val);
+	}
+	
+	public int getLength() {
+		return first.getLength();
+	}
+	
+	public void printInfos() {
+		first.printInfos();
+	}
+}

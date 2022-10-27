@@ -1,0 +1,14 @@
+
+public class EndingNode extends ListElements {
+	
+	public EndingNode() {
+		super();
+	}
+
+	public ListElements AddEnd(Interface val) {
+		return new Node(this, val);
+	}
+	
+	public void printInfos() {	}
+	
+}
