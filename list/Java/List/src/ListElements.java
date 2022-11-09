@@ -10,4 +10,5 @@ abstract class LISTELEMENTS {
 	abstract LISTELEMENTS DelFirst();
 	abstract INTERFACE GetLast(INTERFACE I);
 	abstract LISTELEMENTS DelLast();
+	abstract LISTELEMENTS AddBefore(INTERFACE val, INTERFACE comp);
 }

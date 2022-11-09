@@ -64,4 +64,17 @@ public class TESTS {
 		
 	}
 	
+	public void AddBefore() {
+		LIST l = new LIST();
+		l.AddEnd(p[0]);
+		for(int i = 1; i<p.length; i++) {
+			l.AddBefore(p[i], p[i-1]);
+		}
+		
+		for(int i = 0; i<p.length; i++) {
+			INTERFACE last = l.DelLast();
+			System.out.println(last == p[i]);
+		}
+	}
+	
 }

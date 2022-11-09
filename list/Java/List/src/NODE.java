@@ -41,6 +41,18 @@ public class NODE extends LISTELEMENTS {
 		}
 	}
 	
+	public LISTELEMENTS AddBefore(INTERFACE val, INTERFACE comp) {
+		if(comp == this.val) {
+			val.printInfo();
+			return new NODE(this, val);
+		}
+		else {
+			System.out.println(1);
+			next = next.AddBefore(val, comp);
+			return this;
+		}
+	}
+	
 	public void printInfos() {
 		val.printInfo();
 		next.printInfos();

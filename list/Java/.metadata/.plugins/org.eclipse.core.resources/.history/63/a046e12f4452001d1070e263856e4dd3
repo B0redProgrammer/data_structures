@@ -1,5 +1,0 @@
-
-abstract class ListElements {
-	ListElements() {	}
-	abstract void AddEnd(Interface val);
-}

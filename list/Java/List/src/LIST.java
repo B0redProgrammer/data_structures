@@ -40,4 +40,8 @@ public class LIST {
 	public void printInfos() {
 		first.printInfos();
 	}
+	
+	public void AddBefore(INTERFACE val, INTERFACE comp) {
+		first = first.AddBefore(val, comp);
+	}
 }

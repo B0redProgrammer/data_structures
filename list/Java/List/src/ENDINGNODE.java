@@ -29,6 +29,10 @@ public class ENDINGNODE extends LISTELEMENTS {
 		return null;
 	}
 	
+	public LISTELEMENTS AddBefore(INTERFACE val, INTERFACE comp) {
+		return this;
+	}
+	
 	public void printInfos() {	}
 	
 }
