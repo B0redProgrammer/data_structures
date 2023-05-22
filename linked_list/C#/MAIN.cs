@@ -21,7 +21,7 @@ public interface INT {
 }
 
 public abstract class LISTELEMENTS {
-
+  abstract LISTELEMENTS AddInFront(NODE NEW);
 }
 
 public class NODE : LISTELEMENTS {
@@ -32,6 +32,8 @@ public class NODE : LISTELEMENTS {
     this.obj = obj;
     next = new LASTNODE();
   }
+
+  public LISTELEMENTS AddInFront(NODE NEW);
 }
 
 public class LASTNODE : LISTELEMENTS {
