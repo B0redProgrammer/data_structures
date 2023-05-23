@@ -21,7 +21,7 @@ public interface INT {
 }
 
 public abstract class LISTELEMENTS {
-  public abstract LISTELEMENTS AddInBack(NODE NEW);
+  public abstract LISTELEMENTS AddInBack(NODE New);
   public abstract void printElements();
 }
 
@@ -34,8 +34,8 @@ public class NODE : LISTELEMENTS {
     next = new LASTNODE();
   }
 
-  public override LISTELEMENTS AddInBack(NODE NEW) {
-    next = next.AddInBack(NEW);
+  public override LISTELEMENTS AddInBack(NODE New) {
+    next = next.AddInBack(New);
     return this;
   }
 
@@ -43,11 +43,15 @@ public class NODE : LISTELEMENTS {
     obj.printInfo();
     next.printElements();
   }
+
+  public void SetNext(LISTELEMENTS next) {
+    this.next = next;
+  }
 }
 
 public class LASTNODE : LISTELEMENTS {
-  public override LISTELEMENTS AddInBack(NODE NEW) {
-    return NEW;
+  public override LISTELEMENTS AddInBack(NODE New) {
+    return New;
   }
 
   public override void printElements() {
@@ -66,6 +70,12 @@ public class LIST {
     First_Node = First_Node.AddInBack(new NODE(Entity));
   }
 
+  public void AddInFront(INT Entity) {
+    NODE NewNode = new NODE(Entity);
+    NewNode.SetNext(First_Node);
+    First_Node = NewNode;
+  }
+
   public void printElements() {
     First_Node.printElements();
   }
@@ -74,9 +84,9 @@ public class LIST {
 public class MAIN {
   static LIST l = new LIST();
   public static void Main(string[] args) {
-    l.AddInBack(new PERSON("Peter"));
-    l.AddInBack(new PERSON("Hans"));
-    l.AddInBack(new PERSON("Schmidt"));
+    l.AddInFront(new PERSON("Peter"));
+    l.AddInFront(new PERSON("Hans"));
+    l.AddInFront(new PERSON("Schmidt"));
 
     l.printElements();
   }
